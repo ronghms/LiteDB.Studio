@@ -100,8 +100,8 @@ namespace LiteDB.Studio
 
         public async void Connect(ConnectionString connectionString)
         {
-            lblCursor.Text = "Opening " + connectionString.Filename;
-            lblElapsed.Text = "Reading...";
+            lblCursor.Text = "正在打开 " + connectionString.Filename;
+            lblElapsed.Text = "读取中...";
             prgRunning.Style = ProgressBarStyle.Marquee;
             btnConnect.Enabled = false;
 
@@ -119,7 +119,7 @@ namespace LiteDB.Studio
                 _db?.Dispose();
                 _db = null;
 
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 return;
             }
@@ -139,7 +139,7 @@ namespace LiteDB.Studio
 
             _codeCompletion.UpdateCodeCompletion(_db);
 
-            btnConnect.Text = "Disconnect";
+            btnConnect.Text = "断开连接";
 
             this.UIState(true);
 
@@ -169,14 +169,14 @@ namespace LiteDB.Studio
 
             tvwDatabase.Nodes.Clear();
 
-            btnConnect.Text = "Connect";
+            btnConnect.Text = "连接";
 
             this.UIState(false);
 
             tvwDatabase.Focus();
 
             tlbMain.Enabled = false;
-            lblCursor.Text = "Closing...";
+            lblCursor.Text = "关闭中...";
 
             try
             {
@@ -191,7 +191,7 @@ namespace LiteDB.Studio
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                MessageBox.Show(ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
         }
 
@@ -232,7 +232,7 @@ namespace LiteDB.Studio
             task.Id = ++_tabCounter;
 
             tab.Text = tab.Name = (filename == null ?
-                "Query " + task.Id : 
+                "查询 " + task.Id : 
                 Path.GetFileName(task.Filename)) + TAB_SPACES;
 
             tab.Tag = task;
@@ -262,7 +262,7 @@ namespace LiteDB.Studio
             tvwDatabase.Nodes.Clear();
 
             var root = tvwDatabase.Nodes.Add(Path.GetFileName(_connectionString.Filename));
-            var system = root.Nodes.Add("System");
+            var system = root.Nodes.Add("系统");
 
             root.ImageKey = "database";
             root.ContextMenuStrip = ctxMenuRoot;
@@ -389,7 +389,7 @@ namespace LiteDB.Studio
                 txtParameters.Clear();
 
                 lblResultCount.Visible = false;
-                lblElapsed.Text = "Running";
+                lblElapsed.Text = "运行中";
                 prgRunning.Style = ProgressBarStyle.Marquee;
                 txtParameters.Clear();
             }
@@ -400,9 +400,9 @@ namespace LiteDB.Studio
                 prgRunning.Style = ProgressBarStyle.Blocks;
                 lblResultCount.Text = 
                     data.Result == null ? "" :
-                    data.Result.Count == 0 ? "no documents" :
-                    data.Result.Count  == 1 ? "1 document" : 
-                    data.Result.Count + (data.LimitExceeded ? "+" : "") + " documents";
+                    data.Result.Count == 0 ? "无文档" :
+                    data.Result.Count  == 1 ? "1 条文档" : 
+                    data.Result.Count + (data.LimitExceeded ? "+" : "") + " 条文档";
 
                 if (data.Exception != null)
                 {
@@ -566,11 +566,11 @@ namespace LiteDB.Studio
 
                 if (r.Current == 1) return value;
 
-                throw new Exception("Current document was not found. Try run your query again");
+                throw new Exception("当前文档未找到，请重新运行查询");
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Update error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "更新错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return current;
             }
         }
@@ -958,7 +958,7 @@ namespace LiteDB.Studio
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error on save", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "保存错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -976,7 +976,7 @@ namespace LiteDB.Studio
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error on save", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "保存错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

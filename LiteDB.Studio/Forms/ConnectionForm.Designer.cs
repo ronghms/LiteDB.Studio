@@ -63,7 +63,7 @@
             this.groupBox1.Size = new System.Drawing.Size(569, 60);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Connection Mode";
+            this.groupBox1.Text = "连接模式";
             // 
             // radModeShared
             // 
@@ -72,7 +72,7 @@
             this.radModeShared.Name = "radModeShared";
             this.radModeShared.Size = new System.Drawing.Size(76, 24);
             this.radModeShared.TabIndex = 10;
-            this.radModeShared.Text = "Shared";
+            this.radModeShared.Text = "共享";
             this.radModeShared.UseVisualStyleBackColor = true;
             // 
             // radModeDirect
@@ -84,7 +84,7 @@
             this.radModeDirect.Size = new System.Drawing.Size(70, 24);
             this.radModeDirect.TabIndex = 9;
             this.radModeDirect.TabStop = true;
-            this.radModeDirect.Text = "Direct";
+            this.radModeDirect.Text = "直接";
             this.radModeDirect.UseVisualStyleBackColor = true;
             // 
             // btnOK
@@ -97,7 +97,7 @@
             this.btnOK.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnOK.Size = new System.Drawing.Size(127, 38);
             this.btnOK.TabIndex = 11;
-            this.btnOK.Text = "Connect";
+            this.btnOK.Text = "连接";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.BtnConnect_Click);
             // 
@@ -108,7 +108,7 @@
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(28, 24);
             this.btnOpen.TabIndex = 3;
-            this.toolTip.SetToolTip(this.btnOpen, "Open existing datafile");
+            this.toolTip.SetToolTip(this.btnOpen, "打开现有数据文件");
             this.btnOpen.UseVisualStyleBackColor = true;
             this.btnOpen.Click += new System.EventHandler(this.BtnOpen_Click);
             // 
@@ -129,7 +129,7 @@
             this.groupBox2.Size = new System.Drawing.Size(569, 72);
             this.groupBox2.TabIndex = 28;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Filename";
+            this.groupBox2.Text = "文件名";
             // 
             // txtFilename
             // 
@@ -155,7 +155,7 @@
             this.groupBox3.Size = new System.Drawing.Size(569, 209);
             this.groupBox3.TabIndex = 29;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Parameters";
+            this.groupBox3.Text = "参数";
             // 
             // label4
             // 
@@ -184,7 +184,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 20);
             this.label2.TabIndex = 36;
-            this.label2.Text = "Collation:";
+            this.label2.Text = "排序规则:";
             // 
             // cmbCulture
             // 
@@ -204,7 +204,7 @@
             this.chkUpgrade.Name = "chkUpgrade";
             this.chkUpgrade.Size = new System.Drawing.Size(269, 24);
             this.chkUpgrade.TabIndex = 33;
-            this.chkUpgrade.Text = "Upgrade from LiteDB v4 (if needed)";
+            this.chkUpgrade.Text = "从 LiteDB v4 升级 (如需要)";
             // 
             // label1
             // 
@@ -213,7 +213,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 20);
             this.label1.TabIndex = 32;
-            this.label1.Text = "Password:";
+            this.label1.Text = "密码:";
             // 
             // txtPassword
             // 
@@ -230,7 +230,7 @@
             this.chkReadonly.Name = "chkReadonly";
             this.chkReadonly.Size = new System.Drawing.Size(97, 24);
             this.chkReadonly.TabIndex = 27;
-            this.chkReadonly.Text = "Read only";
+            this.chkReadonly.Text = "只读";
             this.chkReadonly.UseVisualStyleBackColor = true;
             this.chkReadonly.CheckedChanged += new System.EventHandler(this.chkReadonly_CheckedChanged);
             // 
@@ -241,7 +241,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(116, 20);
             this.label3.TabIndex = 30;
-            this.label3.Text = "Initial Size (MB):";
+            this.label3.Text = "初始大小 (MB):";
             // 
             // ConnectionForm
             // 
@@ -260,7 +260,7 @@
             this.Name = "ConnectionForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Connection Manager";
+            this.Text = "连接管理器";
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.ConnectionForm_DragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.ConnectionForm_DragEnter);
             this.groupBox1.ResumeLayout(false);

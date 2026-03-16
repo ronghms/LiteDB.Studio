@@ -220,7 +220,7 @@
             this.tabGrid.Padding = new System.Windows.Forms.Padding(3);
             this.tabGrid.Size = new System.Drawing.Size(945, 448);
             this.tabGrid.TabIndex = 0;
-            this.tabGrid.Text = "Grid";
+            this.tabGrid.Text = "表格";
             this.tabGrid.UseVisualStyleBackColor = true;
             // 
             // grdResult
@@ -250,7 +250,7 @@
             this.tabText.Padding = new System.Windows.Forms.Padding(3);
             this.tabText.Size = new System.Drawing.Size(945, 452);
             this.tabText.TabIndex = 3;
-            this.tabText.Text = "Text";
+            this.tabText.Text = "文本";
             this.tabText.UseVisualStyleBackColor = true;
             // 
             // txtResult
@@ -277,7 +277,7 @@
             this.tabParameters.Padding = new System.Windows.Forms.Padding(3);
             this.tabParameters.Size = new System.Drawing.Size(945, 452);
             this.tabParameters.TabIndex = 5;
-            this.tabParameters.Text = "Parameters";
+            this.tabParameters.Text = "参数";
             this.tabParameters.UseVisualStyleBackColor = true;
             // 
             // txtParameters
@@ -340,7 +340,7 @@
             this.lblResultCount.AutoSize = false;
             this.lblResultCount.Name = "lblResultCount";
             this.lblResultCount.Size = new System.Drawing.Size(150, 18);
-            this.lblResultCount.Text = "0 documents";
+            this.lblResultCount.Text = "0 条文档";
             // 
             // prgRunning
             // 
@@ -398,8 +398,8 @@
             this.recentDBsDropDownButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.recentDBsDropDownButton.Name = "recentDBsDropDownButton";
             this.recentDBsDropDownButton.Size = new System.Drawing.Size(34, 30);
-            this.recentDBsDropDownButton.Text = "recentDBsDropDownButton";
-            this.recentDBsDropDownButton.ToolTipText = "Recent Databases";
+            this.recentDBsDropDownButton.Text = "最近数据库";
+            this.recentDBsDropDownButton.ToolTipText = "最近使用的数据库";
             // 
             // recentListSettings
             // 
@@ -408,21 +408,21 @@
             this.validateRecentListToolStripMenuItem});
             this.recentListSettings.Name = "recentListSettings";
             this.recentListSettings.Size = new System.Drawing.Size(145, 26);
-            this.recentListSettings.Text = "Settings";
+            this.recentListSettings.Text = "设置";
             // 
             // clearRecentListToolStripMenuItem
             // 
             this.clearRecentListToolStripMenuItem.Name = "clearRecentListToolStripMenuItem";
             this.clearRecentListToolStripMenuItem.Size = new System.Drawing.Size(221, 26);
-            this.clearRecentListToolStripMenuItem.Text = "Clear Recent List";
+            this.clearRecentListToolStripMenuItem.Text = "清空最近列表";
             this.clearRecentListToolStripMenuItem.Click += new System.EventHandler(this.ClearAllToolStripMenuItem_Click);
             // 
             // validateRecentListToolStripMenuItem
             // 
             this.validateRecentListToolStripMenuItem.Name = "validateRecentListToolStripMenuItem";
             this.validateRecentListToolStripMenuItem.Size = new System.Drawing.Size(221, 26);
-            this.validateRecentListToolStripMenuItem.Text = "Validate Recent List";
-            this.validateRecentListToolStripMenuItem.ToolTipText = "Remove Any Not Existed Database";
+            this.validateRecentListToolStripMenuItem.Text = "验证最近列表";
+            this.validateRecentListToolStripMenuItem.ToolTipText = "移除不存在的数据库";
             this.validateRecentListToolStripMenuItem.Click += new System.EventHandler(this.ValidateRecentListToolStripMenuItem_Click);
             // 
             // toolStripSeparator6
@@ -437,7 +437,7 @@
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Padding = new System.Windows.Forms.Padding(3);
             this.btnConnect.Size = new System.Drawing.Size(93, 30);
-            this.btnConnect.Text = "Connect";
+            this.btnConnect.Text = "连接";
             this.btnConnect.Click += new System.EventHandler(this.BtnConnect_Click);
             // 
             // tlbSep1
@@ -452,7 +452,7 @@
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Padding = new System.Windows.Forms.Padding(3);
             this.btnRefresh.Size = new System.Drawing.Size(88, 30);
-            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.Text = "刷新";
             this.btnRefresh.Click += new System.EventHandler(this.BtnRefresh_Click);
             // 
             // tlbSep2
@@ -467,7 +467,7 @@
             this.btnRun.Name = "btnRun";
             this.btnRun.Padding = new System.Windows.Forms.Padding(3);
             this.btnRun.Size = new System.Drawing.Size(64, 30);
-            this.btnRun.Text = "Run";
+            this.btnRun.Text = "运行";
             this.btnRun.Click += new System.EventHandler(this.BtnRun_Click);
             // 
             // toolStripSeparator7
@@ -481,8 +481,8 @@
             this.btnLoadSql.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnLoadSql.Name = "btnLoadSql";
             this.btnLoadSql.Size = new System.Drawing.Size(66, 30);
-            this.btnLoadSql.Text = "Load";
-            this.btnLoadSql.ToolTipText = "Load query from file";
+            this.btnLoadSql.Text = "打开";
+            this.btnLoadSql.ToolTipText = "从文件打开查询";
             this.btnLoadSql.Click += new System.EventHandler(this.BtnLoadSql_Click);
             // 
             // btnSaveSql
@@ -491,8 +491,8 @@
             this.btnSaveSql.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSaveSql.Name = "btnSaveSql";
             this.btnSaveSql.Size = new System.Drawing.Size(64, 30);
-            this.btnSaveSql.Text = "Save";
-            this.btnSaveSql.ToolTipText = "Save query into file";
+            this.btnSaveSql.Text = "保存";
+            this.btnSaveSql.ToolTipText = "保存查询到文件";
             this.btnSaveSql.Click += new System.EventHandler(this.BtnSaveSql_Click);
             // 
             // toolStripSeparator1
@@ -506,8 +506,8 @@
             this.btnBegin.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnBegin.Name = "btnBegin";
             this.btnBegin.Size = new System.Drawing.Size(71, 30);
-            this.btnBegin.Text = "Begin";
-            this.btnBegin.ToolTipText = "Begin Transaction";
+            this.btnBegin.Text = "开始";
+            this.btnBegin.ToolTipText = "开始事务";
             this.btnBegin.Click += new System.EventHandler(this.BtnBegin_Click);
             // 
             // btnCommit
@@ -516,7 +516,7 @@
             this.btnCommit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCommit.Name = "btnCommit";
             this.btnCommit.Size = new System.Drawing.Size(86, 30);
-            this.btnCommit.Text = "Commit";
+            this.btnCommit.Text = "提交";
             this.btnCommit.Click += new System.EventHandler(this.BtnCommit_Click);
             // 
             // btnRollback
@@ -525,7 +525,7 @@
             this.btnRollback.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnRollback.Name = "btnRollback";
             this.btnRollback.Size = new System.Drawing.Size(90, 30);
-            this.btnRollback.Text = "Rollback";
+            this.btnRollback.Text = "回滚";
             this.btnRollback.Click += new System.EventHandler(this.BtnRollback_Click);
             // 
             // toolStripSeparator2
@@ -539,7 +539,7 @@
             this.btnCheckpoint.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCheckpoint.Name = "btnCheckpoint";
             this.btnCheckpoint.Size = new System.Drawing.Size(107, 30);
-            this.btnCheckpoint.Text = "Checkpoint";
+            this.btnCheckpoint.Text = "检查点";
             this.btnCheckpoint.Click += new System.EventHandler(this.BtnCheckpoint_Click);
             // 
             // toolStripSeparator4
@@ -553,7 +553,7 @@
             this.btnDebug.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnDebug.Name = "btnDebug";
             this.btnDebug.Size = new System.Drawing.Size(78, 30);
-            this.btnDebug.Text = "Debug";
+            this.btnDebug.Text = "调试";
             this.btnDebug.Click += new System.EventHandler(this.btnDebug_Click);
             // 
             // toolStripSeparator5
@@ -568,8 +568,8 @@
             this.load_last_db_now.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.load_last_db_now.Name = "load_last_db_now";
             this.load_last_db_now.Size = new System.Drawing.Size(29, 30);
-            this.load_last_db_now.Text = "toolStripButton1";
-            this.load_last_db_now.ToolTipText = "Load Last Db";
+            this.load_last_db_now.Text = "加载最近数据库";
+            this.load_last_db_now.ToolTipText = "加载最近数据库";
             this.load_last_db_now.Click += new System.EventHandler(this.LoadLastDbNow_Click);
             // 
             // toolStripSeparator8
@@ -601,7 +601,7 @@
             this.mnuQueryAll.Name = "mnuQueryAll";
             this.mnuQueryAll.Size = new System.Drawing.Size(185, 26);
             this.mnuQueryAll.Tag = "SELECT $ FROM {0};";
-            this.mnuQueryAll.Text = "Query";
+            this.mnuQueryAll.Text = "查询";
             // 
             // mnuQueryCount
             // 
@@ -609,7 +609,7 @@
             this.mnuQueryCount.Name = "mnuQueryCount";
             this.mnuQueryCount.Size = new System.Drawing.Size(185, 26);
             this.mnuQueryCount.Tag = "SELECT COUNT(*) FROM {0};";
-            this.mnuQueryCount.Text = "Count";
+            this.mnuQueryCount.Text = "计数";
             // 
             // mnuExplanPlan
             // 
@@ -617,7 +617,7 @@
             this.mnuExplanPlan.Name = "mnuExplanPlan";
             this.mnuExplanPlan.Size = new System.Drawing.Size(185, 26);
             this.mnuExplanPlan.Tag = "EXPLAIN SELECT $ FROM {0};";
-            this.mnuExplanPlan.Text = "Explain plan";
+            this.mnuExplanPlan.Text = "执行计划";
             // 
             // mnuSep1
             // 
@@ -630,7 +630,7 @@
             this.mnuIndexes.Name = "mnuIndexes";
             this.mnuIndexes.Size = new System.Drawing.Size(185, 26);
             this.mnuIndexes.Tag = "SELECT $ FROM $indexes WHERE collection = \"{0}\";";
-            this.mnuIndexes.Text = "Indexes";
+            this.mnuIndexes.Text = "索引";
             // 
             // mnuSep2
             // 
@@ -643,7 +643,7 @@
             this.mnuExport.Name = "mnuExport";
             this.mnuExport.Size = new System.Drawing.Size(185, 26);
             this.mnuExport.Tag = "SELECT $\\n  INTO $file(\'C:/temp/{0}.json\')\\n  FROM {0};";
-            this.mnuExport.Text = "Export to JSON";
+            this.mnuExport.Text = "导出为 JSON";
             // 
             // mnuAnalyze
             // 
@@ -651,7 +651,7 @@
             this.mnuAnalyze.Name = "mnuAnalyze";
             this.mnuAnalyze.Size = new System.Drawing.Size(185, 26);
             this.mnuAnalyze.Tag = "ANALYZE {0};";
-            this.mnuAnalyze.Text = "Analyze";
+            this.mnuAnalyze.Text = "分析";
             // 
             // mnuRename
             // 
@@ -659,7 +659,7 @@
             this.mnuRename.Name = "mnuRename";
             this.mnuRename.Size = new System.Drawing.Size(185, 26);
             this.mnuRename.Tag = "RENAME COLLECTION {0} TO new_name;";
-            this.mnuRename.Text = "Rename";
+            this.mnuRename.Text = "重命名";
             // 
             // mnuDropCollection
             // 
@@ -667,7 +667,7 @@
             this.mnuDropCollection.Name = "mnuDropCollection";
             this.mnuDropCollection.Size = new System.Drawing.Size(185, 26);
             this.mnuDropCollection.Tag = "DROP COLLECTION {0};";
-            this.mnuDropCollection.Text = "Drop collection";
+            this.mnuDropCollection.Text = "删除集合";
             // 
             // ctxMenuRoot
             // 
@@ -687,7 +687,7 @@
             this.mnuInfo.Name = "mnuInfo";
             this.mnuInfo.Size = new System.Drawing.Size(202, 26);
             this.mnuInfo.Tag = "SELECT $ FROM $database;";
-            this.mnuInfo.Text = "Database Info";
+            this.mnuInfo.Text = "数据库信息";
             // 
             // toolStripSeparator3
             // 
@@ -700,7 +700,7 @@
             this.mnuImport.Name = "mnuImport";
             this.mnuImport.Size = new System.Drawing.Size(202, 26);
             this.mnuImport.Tag = "SELECT $\\n  INTO new_col\\n  FROM $file(\'C:/temp/file.json\');";
-            this.mnuImport.Text = "Import from JSON";
+            this.mnuImport.Text = "从 JSON 导入";
             // 
             // mnuRebuild
             // 
@@ -708,7 +708,7 @@
             this.mnuRebuild.Name = "mnuRebuild";
             this.mnuRebuild.Size = new System.Drawing.Size(202, 26);
             this.mnuRebuild.Tag = "REBUILD { collation: \'en-US/IgnoreCase\',  password: \'newpassword\' };";
-            this.mnuRebuild.Text = "Rebuild";
+            this.mnuRebuild.Text = "重建";
             // 
             // imgCodeCompletion
             // 
@@ -730,17 +730,17 @@
             this.loadLastDb.Name = "loadLastDb";
             this.loadLastDb.Size = new System.Drawing.Size(227, 24);
             this.loadLastDb.TabIndex = 13;
-            this.loadLastDb.Text = "Load last database on startup";
+            this.loadLastDb.Text = "启动时加载最近数据库";
             this.loadLastDb.UseVisualStyleBackColor = false;
             this.loadLastDb.CheckedChanged += new System.EventHandler(this.LoadLastDbChecked_Changed);
             // 
             // dialogSqlOpen
             // 
-            this.dialogSqlOpen.Filter = "SQL Files|*.sql|All files|*.*";
+            this.dialogSqlOpen.Filter = "SQL 文件|*.sql|所有文件|*.*";
             // 
             // dialogSqlSave
             // 
-            this.dialogSqlSave.Filter = "SQL Files|*.sql|All files|*.*";
+            this.dialogSqlSave.Filter = "SQL 文件|*.sql|所有文件|*.*";
             // 
             // MainForm
             // 
