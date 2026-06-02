@@ -1,4 +1,4 @@
-﻿using ICSharpCode.TextEditor;
+﻿﻿using ICSharpCode.TextEditor;
 using LiteDB.Engine;
 using LiteDB.Studio.Forms;
 using System;
@@ -529,7 +529,11 @@ namespace LiteDB.Studio
                 cell.Style.BackColor = Color.LightGreen;
             }
 
-            cell.Value = value;
+            // 手动触发CellFormatting事件，复用格式化逻辑（DataGridView在CellEndEdit中不会自动触发）
+            var formatArgs = new DataGridViewCellFormattingEventArgs(
+                cell.ColumnIndex, cell.RowIndex, value, typeof(string), cell.Style);
+            GrdResult_CellFormatting(grdResult, formatArgs);
+            cell.Value = formatArgs.Value;
         }
 
         private void GrdResult_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
@@ -771,6 +775,9 @@ namespace LiteDB.Studio
 
         private void GrdResult_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
+            // 如果已经是字符串（编辑后的情况），不处理，避免重复格式化导致显示为空
+            if (e.Value is string) return;
+
             var value = e.Value as BsonValue;
 
             if (value == null)
